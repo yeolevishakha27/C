@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main() {
+    int a, b, l;
+    printf("Enter two numbers:");
+    scanf("%d%d", &a, &b);
+
+    // Find the minimum of a and b
+    int min = (a < b) ? a : b;
+
+    for (l = 1; l <= min; l++) {
+        if (a % l == 0 && b % l == 0) {
+            // l is a common factor, update GCD
+        }
+    }
+
+    printf("GCD is %d", l - 1); // Corrected the output of GCD
+
+    return 0;
+}
